@@ -3,6 +3,18 @@
 
      @section('title','Home')
 
+    @push('styles')
+        <link rel="stylesheet" href="{{ asset("/css/adminlte.css"); }}" />
+    @endpush
+
+    @push('scripts')
+    <script src="{{ asset ("js/adminlte.js") }}"></script>
+    @endpush
+
+     @section('list')
+     @parent
+     <li> dashboard  </li>
+     @endsection
 
      @section('content')
         <!--begin::App Content Header-->

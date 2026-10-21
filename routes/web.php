@@ -10,6 +10,9 @@ Route::get('/', function () {
 
 Route::get('/dashboard', [HomeController::class,'index']);
 
+Route::get('/orders', function () {
+    return view('orders');
+});
 
 // Route::get('/dashboard', function () {
 //     return view('index');
